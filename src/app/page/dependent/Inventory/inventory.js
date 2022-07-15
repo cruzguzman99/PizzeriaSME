@@ -34,8 +34,8 @@ export default function Inventory(params) {
     );
   }, [ID]);
 
-  const handlerProductDelete = (e) => {
-    console.log(e.target.checked);
+  const handlerProductDelete = (sku) => {
+    fetchProduct.deleteProduct(sku).then((res) => console.log(res));
   };
   const handleSearch = (e) => {
     setSearch(e.target.value);

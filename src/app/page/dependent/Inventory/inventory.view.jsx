@@ -103,25 +103,25 @@ const InventoryView = (props) => {
           <div className="Container__Inventory__Contents">
             <div className="Container__Inventory__Contents__title">
               <div className="Container__Inventory__ContentsGrid__item">
-                <h3>#</h3>
+                <h3 style={{ textAlign: "center", width: "100%" }}>IMG</h3>
               </div>
               <div className="Container__Inventory__ContentsGrid__item">
-                <h3>SKU</h3>
+                <h3 style={{ textAlign: "center", width: "100%" }}>SKU</h3>
               </div>
               <div className="Container__Inventory__ContentsGrid__item">
-                <h3>Nombre</h3>
+                <h3 style={{ textAlign: "center", width: "100%" }}>NOMBRE</h3>
               </div>
               <div className="Container__Inventory__ContentsGrid__item">
-                <h3>Categoria</h3>
+                <h3 style={{ textAlign: "center", width: "100%" }}>CAT</h3>
               </div>
               <div className="Container__Inventory__ContentsGrid__item">
-                <h3>Precio</h3>
+                <h3 style={{ textAlign: "center", width: "100%" }}>PRECIO</h3>
               </div>
               <div className="Container__Inventory__ContentsGrid__item">
-                <h3>Catidad</h3>
+                <h3 style={{ textAlign: "center", width: "100%" }}>CANTIDAD</h3>
               </div>
               <div className="Container__Inventory__ContentsGrid__item">
-                <h4></h4>
+                <h4 style={{ textAlign: "center", width: "100%" }}>ACCIONES</h4>
               </div>
             </div>
             {Producto
@@ -142,11 +142,6 @@ const InventoryView = (props) => {
                 ))
               : null}
             <div className="Spacing"></div>
-
-            <div className="Container__Inventory__Contents__delete">
-              <div className="eli"></div>
-              <button>ELIMINAR</button>
-            </div>
             <div className="Spacing"></div>
           </div>
         </div>

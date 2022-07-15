@@ -90,26 +90,21 @@ export const CardInventory = (props) => {
       <div className={increase ? "Spacing increase" : "Spacing"}></div>
       <div className={increase ? "container-card increase" : "container-card"}>
         <div className="container-card__ContentsGrid">
-          <div className="container-card__ContentsGrid__item delete">
-            <input
-              onMouseUp={(e) => handlerProductDelete(e, Sku)}
-              type="checkbox"
-            />
-            <div className="container-card__ContentsGrid__img">
-              <img src={`${apiUrl}${Image}`} alt="Imagen" />
-            </div>
+          <div className="container-card__ContentsGrid__img">
+            <img src={`${apiUrl}${Image}`} alt="Imagen" />
           </div>
           <div title={Sku} className="container-card__ContentsGrid__item Sku">
             <h4>{Sku}</h4>
           </div>
           <div
+            style={{ textAlign: "center", width: "100%" }}
             title={Nombre}
             className="container-card__ContentsGrid__item Nombre"
           >
-            <h4>{Nombre}</h4>
+            <h4 style={{ textAlign: "center", width: "100%" }}>{Nombre}</h4>
           </div>
           <div className="container-card__ContentsGrid__item">
-            <p>
+            <p style={{ textAlign: "center", width: "100%" }}>
               {Category ||
               categoriaID === "48c8c50d-5b40-45a0-9e85-77255f559ade"
                 ? "Pizza"
@@ -117,10 +112,27 @@ export const CardInventory = (props) => {
             </p>
           </div>
           <div className="container-card__ContentsGrid__item">
-            <p>{Price}</p>
+            <p style={{ textAlign: "center", width: "100%" }}>{Price}</p>
           </div>
           <div className="container-card__ContentsGrid__item">
-            <p>{Stock}</p>
+            <p style={{ textAlign: "center", width: "100%" }}>{Stock}</p>
+          </div>
+          <div className="container-card__ContentsGrid__item">
+            <button
+              style={{
+                textAlign: "center",
+                width: "100%",
+                background: "#F44336",
+                color: "white",
+                fontWeight: "bold",
+                borderRadius: "5px",
+                border: "none",
+                height: "1.5rem",
+              }}
+              onClick={(e) => handlerProductDelete(Sku)}
+            >
+              ELIMINAR
+            </button>
           </div>
           <div className="container-card__ContentsGrid__item">
             <IconButton

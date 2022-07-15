@@ -64,9 +64,8 @@
   height: 10vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 10vh;
-
   gap: 10px;
 }
 
@@ -76,14 +75,14 @@
   align-items: center;
 }
 .container-card__ContentsGrid__item.Sku h4 {
-  width: 104px;
+  width: 90px;
   text-align: center;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 .container-card__ContentsGrid__item.Nombre h4 {
-  width: 104px;
+  width: 90px;
   text-align: center;
   text-overflow: ellipsis;
   overflow: hidden;

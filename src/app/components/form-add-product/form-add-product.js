@@ -199,7 +199,6 @@ const FormAddProduct = (props) => {
           name={"Nombre"}
           onChange={handlerProductChange}
           label="Nombre"
-          defaultValue="Hello World"
           variant="outlined"
         />
         <TextField
@@ -211,7 +210,6 @@ const FormAddProduct = (props) => {
           type="number"
           onChange={handlerProductChange}
           label="Stock"
-          defaultValue="Hello World"
           variant="outlined"
         />
         <TextField
@@ -221,7 +219,7 @@ const FormAddProduct = (props) => {
           size="small"
           onBlur={hadleChangeCategoria}
           label="Categoria"
-          defaultValue="Hello World"
+          placeholder="Pizza o bebidas"
           variant="outlined"
         />
         <TextField
@@ -233,7 +231,6 @@ const FormAddProduct = (props) => {
           type="number"
           onChange={handlerProductChange}
           label="Precio"
-          defaultValue="Hello World"
           variant="outlined"
         />
         {categoria ? (
@@ -265,7 +262,6 @@ const FormAddProduct = (props) => {
           name={"Descripcion"}
           onChange={handlerProductChange}
           label="Descripcion"
-          defaultValue="Hello World"
           variant="outlined"
         />
         <input

@@ -110,7 +110,7 @@ export async function deleteProduct(ID) {
   const response = await fetch(baseUrl, {
     method: "DELETE",
   });
-  return response.json();
+  return response;
 }
 
 export const fetchProduct = {

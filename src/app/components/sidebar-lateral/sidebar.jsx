@@ -159,20 +159,26 @@ export function PersistentDrawerLeft({ titulo, children, setDecreases }) {
         </div>
         <Divider />
         <List>
-          {["Reporte de Venta", "inventory", "Ingredientes"].map(
+          {["REPORTE DE VENTAS", "PRODUCTOS", "INGREDIENTES", "SALIR"].map(
             (text, index) => (
               <Link
                 to={
-                  text === "Reporte de Venta"
+                  text === "REPORTE DE VENTAS"
                     ? "/sales-report"
-                    : text === "inventory"
+                    : text === "PRODUCTOS"
                     ? "/inventory"
-                    : text === "Ingredientes"
+                    : text === "INGREDIENTES"
                     ? "/inventory-ingredents"
+                    : text === "SALIR"
+                    ? ""
                     : null
                 }
               >
-                <ListItem button key={text}>
+                <ListItem
+                  button
+                  key={text}
+                  onClick={text === "SALIR" ? () => logout() : null}
+                >
                   <ListItemIcon>
                     {index % 1 === 0 ? <InboxIcon /> : <MailIcon />}
                   </ListItemIcon>
